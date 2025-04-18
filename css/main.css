@@ -1106,21 +1106,23 @@ header .logo {
 	float: left;
 	margin-left: 20px;
 	margin-right: 50px;
-	margin-top: 25px;
+	margin-top: 7px;
+	margin-bottom: 0px;
 	position: relative;
 }
 header .logo a {
-	display: block;
-	margin: 0;
-	padding: 0;
-	border: none;
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-	width: 92px;
-	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    width: 150px;       /* Augmentation de la largeur */
+    height: 50px;       /* Augmentation de la hauteur */
+    background: url("../images/logo.png.png") no-repeat center;
+    background-size: 150px 150px; /* Correspondance avec la taille du logo */
+	border-radius: 8px; /* Ajout du border-radius */
 }
 
 /**
@@ -1294,7 +1296,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+	background: #151515 url(../images/banniereoff.png) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -2597,3 +2599,36 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+#projets {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+/* 5 cards par ligne */
+.project-card {
+    flex: 0 0 33.33% !important;
+    max-width: 33.33% !important;
+}
+@media (max-width: 768px) {
+    /* Sur mobile, 2 cards par ligne */
+    .project-card {
+      flex: 0 0 50% !important;
+      max-width: 50% !important;
+    }
+}
+
+
+
+.section-title {
+    color: #FF0077; /* Remplace #333 par la couleur utilisée par tes autres titres */
+}
+
+.containerprojects {
+	margin-top: 1rem;
+	margin-bottom: 4rem;
+	
+}
+
+.card {
+    border-radius: 8px;
+}
